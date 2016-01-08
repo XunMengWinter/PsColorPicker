@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="rgb_size">768px</dimen>
+    <dimen name="seek_size">960px</dimen>
+    <dimen name="red_width">72px</dimen>
+    <dimen name="red_seek_size">120px</dimen>
+    <dimen name="rgb_margin">24px</dimen>
+    <dimen name="picked_color_view_size">192px</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PsColorPicker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string formatted="false" name="rgb">R: %d    , G: %d    , B: %d</string>
+    <string name="color_hex_value">十六进制: %s</string>
+    <string name="alpha_value">不透明度: %.2f</string>
+
+</resources>

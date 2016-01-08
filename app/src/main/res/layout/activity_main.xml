@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="@dimen/picked_color_view_size"
+        android:layout_height="@dimen/picked_color_view_size"
+        android:background="@mipmap/bg_alpha"
+        >
+
+        <View
+            android:id="@+id/pickedColor_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5abc"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rgb_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/rgb"
+        android:textIsSelectable="true"/>
+
+    <TextView
+        android:id="@+id/hex_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/color_hex_value"
+        android:textIsSelectable="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_width="@dimen/rgb_size"
+            android:layout_height="@dimen/rgb_size"
+            android:layout_marginLeft="@dimen/rgb_margin"
+            >
+
+            <ImageView
+                android:id="@+id/gb_view"
+                android:layout_width="@dimen/rgb_size"
+                android:layout_height="@dimen/rgb_size"
+                android:background="#0ff"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/gb_picker_imageView"
+                android:layout_width="@dimen/rgb_margin"
+                android:layout_height="@dimen/rgb_margin"
+                android:layout_gravity="center"
+                android:src="@mipmap/circle"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rgb_size"
+            android:layout_marginLeft="@dimen/rgb_margin"
+            >
+
+            <ImageView
+                android:id="@+id/r_picker_imageView"
+                android:layout_width="@dimen/red_seek_size"
+                android:layout_height="@dimen/red_seek_size"
+                android:layout_gravity="center"
+                android:src="@mipmap/seek"
+                />
+
+            <ImageView
+                android:id="@+id/r_view"
+                android:layout_width="@dimen/red_width"
+                android:layout_height="@dimen/rgb_size"
+                android:layout_marginLeft="@dimen/rgb_margin"
+                android:background="#f00"
+                android:scaleType="fitXY"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/a_seekBar"
+        android:layout_width="@dimen/seek_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:progress="100"/>
+
+    <TextView
+        android:id="@+id/a_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/alpha_value"
+        android:textIsSelectable="true"/>
+
+</LinearLayout>
