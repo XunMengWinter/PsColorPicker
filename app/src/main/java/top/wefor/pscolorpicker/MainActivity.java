@@ -5,8 +5,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -28,35 +28,27 @@ public class MainActivity extends AppCompatActivity {
     /**
      * show picked color and value
      */
-    @Bind(R.id.pickedColor_view)
-    View mPickedColorView;
-    @Bind(R.id.rgb_textView)
-    TextView mRgbTextView;
-    @Bind(R.id.hex_textView)
-    TextView mHexTextView;
+    @BindView(R.id.pickedColor_view) View mPickedColorView;
+    @BindView(R.id.rgb_textView) TextView mRgbTextView;
+    @BindView(R.id.hex_textView) TextView mHexTextView;
 
     /**
      * pick color;
      * gb = green and blue;
      * r = red.
      */
-    @Bind(R.id.gb_view)
-    ImageView mGbView;
-    @Bind(R.id.r_view)
-    ImageView mRView;
-    @Bind(R.id.gb_picker_imageView)
-    ImageView mGbPickerImageView;
-    @Bind(R.id.r_picker_imageView)
-    ImageView mRPickerImageView;
+    @BindView(R.id.gb_picker_imageView) ImageView mGbPickerImageView;
+    @BindView(R.id.r_picker_imageView) ImageView mRPickerImageView;
+    @BindView(R.id.gb_view) ImageView mGbView;
+    @BindView(R.id.r_view) ImageView mRView;
 
     /**
      * pick alpha and show alpha value;
      * a = alpha.
      */
-    @Bind(R.id.a_seekBar)
-    SeekBar mASeekBar;
-    @Bind(R.id.a_textView)
-    TextView mATextView;
+    @BindView(R.id.a_seekBar) SeekBar mASeekBar;
+    @BindView(R.id.a_textView) TextView mATextView;
+
 
     /**
      * init color
